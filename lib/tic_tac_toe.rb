@@ -102,13 +102,10 @@ class TicTacToe
   end
   
   def play
-    puts "Welcome to a game of Tic Tac Toe!"
-    display_board
-    puts "Pick the space number on the board where you would like to play and enter 1-9."
     until over? == true
       turn
-      display_board
     end
+    puts "Congratulatins #{winner}!"
   end
   
 end
