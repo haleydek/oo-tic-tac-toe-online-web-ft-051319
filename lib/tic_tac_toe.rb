@@ -113,5 +113,3 @@ class TicTacToe
   end
   
 end
-
-bin/tictactoe
