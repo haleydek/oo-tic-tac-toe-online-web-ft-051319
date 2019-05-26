@@ -114,4 +114,4 @@ class TicTacToe
   
 end
 
-bin/TicTactoe
+bin/tictactoe
