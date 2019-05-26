@@ -111,6 +111,7 @@ class TicTacToe
     until over? == true
       turn
       display_board
+      won?
     end
   end
   
