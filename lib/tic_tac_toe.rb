@@ -84,8 +84,7 @@ class TicTacToe
   end
   
   def draw?
-    if won?.to_a.size == 3
-      return false
+    if won?
     else full?
     end
   end
