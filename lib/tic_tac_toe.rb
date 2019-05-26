@@ -91,9 +91,12 @@ class TicTacToe
   end
   
   def over?
-    if won? && full?
+    if !won? && full?
       return true
-    else 
+    elsif !won? && !full?
+      return false
+    else won?
+      return false
   end
   
   def winner
