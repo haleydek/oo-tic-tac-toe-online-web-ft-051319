@@ -92,7 +92,6 @@ class TicTacToe
   
   def over?
     if won?.to_a.size == 3
-      puts 
       return true
     else full?
     end
@@ -108,14 +107,11 @@ class TicTacToe
   def play
     puts "Welcome to a game of Tic Tac Toe!"
     display_board
-    puts "Pick the location on the board where you would like to play and enter 1-9."
+    puts "Pick the space number on the board where you would like to play and enter 1-9."
     until over? == true
       turn
       display_board
     end
-    
-    if over? == true
-      
   end
   
 end
