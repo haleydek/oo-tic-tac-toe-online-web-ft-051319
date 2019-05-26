@@ -84,19 +84,12 @@ class TicTacToe
   end
   
   def draw?
-   if won?.to_a.size == 3
-      return false
-    else full?
-    end
+   if won? == false && full? == true
+     return true
   end
   
   def over?
-    if !won? && full?
-      return true
-    elsif !won? && !full?
-      return false
-    else won?
-      return false
+    
   end
   
   def winner
