@@ -91,15 +91,15 @@ class TicTacToe
   end
   
   def over?
-    if won?.to_a.size == 3
-      return true
-    else full?
+    if won? == false
+      full?
+    else true
     end
   end
   
   def winner
-    if won? == nil
-      return nil
+    if won? == false
+      return false
     else board[won?.to_a[0]]
     end
   end
@@ -111,7 +111,6 @@ class TicTacToe
     until over? == true
       turn
       display_board
-      won?
     end
   end
   
