@@ -113,3 +113,5 @@ class TicTacToe
   end
   
 end
+
+bin/TicTactoe
